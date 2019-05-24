@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+
+<scene>
+  <sky>
+    <clouds>
+      <speed>12</speed>
+    </clouds>
+  </sky>
+</scene>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+
+    <model name="Kreisverkehr">
+    <static>true</static>
+	<link name="body">
+	<inertial>
+	 <pose>1 2 5  2 2 2</pose>
+	 <mass>30.0</mass>
+
+          </inertial>
+   
+        <collision name="visual">
+	  <geometry>
+            <mesh><uri>file://Kreisverkehr.dae</uri></mesh>
+          </geometry>
+          
+        </collision>      
+
+
+        <visual name="visual">
+	  <geometry>
+            <mesh><uri>file://Kreisverkehr.dae</uri></mesh>
+          </geometry>
+
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

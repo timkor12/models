@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+   <world name="default">
+
+      <actor name="actor">
+         <skin>
+            <filename>moonwalk.dae</filename> <!-- Hier die Farbe auswählen -->
+            <scale>1.0</scale>
+         </skin>
+         <pose>0 0 0 0 0 0</pose>
+         <animation name="running">  <!-- Form der Bewegung -->
+            <filename>run.dae</filename>
+            <scale>1</scale>
+            <interpolate_x>true</interpolate_x>
+         </animation>
+         <script>
+            <loop>true</loop>
+            <delay_start>0</delay_start>
+            <auto_start>true</auto_start>
+            <trajectory id="0" type="running">
+
+               <waypoint>
+                  <time>0</time>
+                  <pose>0 0 0 0 0 0</pose>
+               </waypoint>
+
+               <waypoint>
+                  <time>1.5</time>
+                  <pose>2 0 0 0 0 0</pose>
+               </waypoint>
+
+               <waypoint>
+                  <time>2</time>
+                  <pose>3 0 0 0 0 0</pose>
+               </waypoint>
+
+	           	<waypoint>
+                  <time>3</time>
+                  <pose>3 0 0 0 0 3.14</pose>
+               </waypoint>
+
+
+		         <waypoint>
+                  <time>4.5</time>
+                  <pose>2 0 0 0 0 3.14</pose>
+               </waypoint>
+
+
+		         <waypoint>
+                  <time>6</time>
+                  <pose>0 0 0 0 0 3.14</pose>
+               </waypoint>
+
+
+		          <waypoint>
+                  <time>6.5</time>
+                  <pose>0 0 0 0 0 0</pose>
+               </waypoint>
+
+		          <waypoint>
+                  <time>7</time>
+                  <pose>1 0 0 0 0 0 </pose>
+               </waypoint>
+
+	           	<waypoint>
+                  <time>7.5</time>
+                  <pose>1 0 0 0 0 1.57</pose>
+               </waypoint>
+
+	           	<waypoint>
+                  <time>8.5</time>
+                  <pose>1 1 0 0 0 1.57</pose>
+               </waypoint>
+
+         		<waypoint>
+                  <time>12</time>
+                  <pose>1 5 0 0 0 1.57</pose>
+               </waypoint>
+
+
+	          	<waypoint>
+                  <time>12.5</time>
+                  <pose>1 5 0 0 0 0</pose>
+               </waypoint>
+		
+	        <waypoint>
+                  <time>15</time>
+                  <pose>5 5 0 0 0 0</pose>
+               </waypoint>
+
+		<waypoint>
+                  <time>15.5</time>
+                  <pose>5 5 0 0 0 -1.57</pose>
+               </waypoint>
+
+
+		<waypoint>
+                  <time>20</time>
+                  <pose>5 0 0 0 0 -1.57</pose>
+               </waypoint>
+
+		<waypoint>
+                  <time>20.5</time>
+                  <pose>5 0 0 0 0 -3.14</pose>
+               </waypoint>
+
+
+		<waypoint>
+                  <time>25</time>
+                  <pose>0 0 0 0 0 -3.14</pose>
+               </waypoint>
+
+		<waypoint>
+                  <time>25.5</time>
+                  <pose>0 0 0 0 0 0</pose>
+               </waypoint>	
+
+
+            </trajectory>
+         </script>
+      </actor>
+
+   </world>
+</sdf>
